@@ -1,0 +1,78 @@
+@import mixins
+
+html
+   padding 0
+   margin 0
+   background-color #ddd
+   color #46483E
+   font-family 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+   font-size 12pt
+
+.clear
+   clear both
+
+.preview
+   width 172px
+   position relative
+   height 112px
+   background-color white
+   float left
+   margin-right 10px
+   font-size .9em
+   img
+      border 1px solid #ccc
+      padding 5px
+   span
+      display block
+      position absolute
+      bottom 6px
+      left 6px
+      width 160px
+      
+      &.banner
+         background #333
+         opacity(.5)
+      &.duration
+         color white
+         left 10px
+
+a.button 
+   background-color #ffc477
+   box-shadow(inset 0px 1px 0px 0px #fce2c1)
+   background-linear-gradient(top, #ffc477, 5%, #fb9e25, 100%)
+   border-radius 6px
+   border 1px solid #eeb44f
+   display inline-block
+   color white
+   font-size .8em
+   font-weight bold
+   padding 5px 20px
+   text-decoration none
+   text-shadow 1px 1px 0px #cc9f52
+   
+   &:hover
+      background-linear-gradient(top, #fb9e25, 5%, #ffc477, 100%)
+      background-color #dfdfdf
+   &:active 
+      position relative
+      top 1px
+ul
+   list-style-type none
+   margin 0
+   padding 0
+
+   li.lab
+      margin-bottom 20px
+      min-height 112px
+      h2 
+         font-size 1.4em
+         margin 0
+         padding 0
+      p 
+         font-size 1em
+         margin 0 
+         padding 0
+      img
+         float left
+         margin-right 10px
+      
