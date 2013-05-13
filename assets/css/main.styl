@@ -1,16 +1,32 @@
 @import mixins
 
-html
+html, *
    padding 0
    margin 0
+html
    background-color #ddd
    color #46483E
    font-family 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
    font-size 12pt
 
+body
+   margin 0
+   padding 0
+
 .clear
    clear both
 
+#header
+   background-color #46483E
+   box-shadow(0 5px 5px rgba(0,0,0,0.3))
+   margin-bottom 10px
+   padding 5px
+h1
+   background transparent url('/images/nodelabs.png') top left no-repeat
+   height 80px
+   width 140px
+   text-indent -9999px
+   margin-left 20px
 .preview
    width 172px
    position relative
@@ -60,10 +76,12 @@ ul
    list-style-type none
    margin 0
    padding 0
+   width 750px
 
    li.lab
-      margin-bottom 20px
+      padding 5px
       min-height 112px
+
       h2 
          font-size 1.4em
          margin 0
@@ -75,4 +93,7 @@ ul
       img
          float left
          margin-right 10px
+      &:hover
+         background-color #ccc
+
       
