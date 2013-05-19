@@ -18,7 +18,16 @@ html(lang="en")
                   a.email(href="/contact")
                      img(src="/images/email-icon.png", width="45", height="45")
 
-      .content
-         block content
+      #content.content
+         .main
+            block content
+         .pane
+            ul.posts-list
+               li 
+                  a Test
+               li 
+                  a test2
+         .clear
+
       #footer
-         block footer
+         © 2013 Node Labs
