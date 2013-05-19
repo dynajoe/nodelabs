@@ -1,0 +1,7 @@
+{
+   "labs": [
+      { "title": "Introduction to Node.js", "description": "An introduction to Node.js architecture and some examples.", "duration": "1 hour" },
+      { "title": "Express.js", "description": "How to create an express.js application.", "duration": "20 min" },
+      { "title": "Socket.io", "description": "Real-time web applications using socket.io.", "duration": "15 min" }
+   ]
+}
