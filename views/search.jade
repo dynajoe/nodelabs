@@ -1,17 +1,25 @@
 extends layout
 
 block content
-   ul 
-      each lab in labs
-         li.lab
-            .preview
-               img(src="images/intro.jpg")
-               span.banner &nbsp;
-               span.duration= lab.duration
 
-            h2= lab.title
-            p= lab.description
-            a.watch.button(href="#") Watch
-            .clear
-            
-   
+   #labs
+      .header
+         h2 Labs
+         form.search-form(action="/search")
+            span 
+               input.search.rounded(type="text", placeholder="Search...") 
+      .clear
+      ul 
+         each lab in labs
+            li.lab
+               .preview
+                  img(src="images/intro.jpg")
+                  span.banner &nbsp;
+                  span.duration= lab.duration
+
+               h2= lab.title
+               p= lab.description
+               a.watch.button(href="#") Watch
+               .clear
+               
+      
