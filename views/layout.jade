@@ -4,11 +4,12 @@ html(lang="en")
       title= title
       link(href='http://fonts.googleapis.com/css?family=Titillium+Web', rel='stylesheet', type='text/css')
       != css("main")
+      != css("highlight")
          
    body
       #header
          .content
-            h1
+            h1.header
                img(src="/images/nodelabs.png", height="80", width="113")
             ul.contact
                li
@@ -19,14 +20,7 @@ html(lang="en")
                      img(src="/images/email-icon.png", width="45", height="45")
 
       #content.content
-         .main
-            block content
-         .pane
-            ul.posts-list
-               li 
-                  a Test
-               li 
-                  a test2
+         block content
          .clear
 
       #footer

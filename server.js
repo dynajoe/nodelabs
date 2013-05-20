@@ -17,5 +17,6 @@ app.configure(function () {
 });
 
 require('./controllers/search')(app);
+require('./controllers/lab')(app);
 
 server.listen(3000);
